@@ -1,7 +1,9 @@
 import cssText from "data-text:~style.css"
 import type { PlasmoCSConfig } from "plasmo"
+import { createPortal } from "react-dom"
 
-import { CountButton } from "~features/CountButton"
+import { AiMsgProvider } from "~context"
+import { AiMsgReplier } from "~features/AiMsgReplier"
 
 export const config: PlasmoCSConfig = {
   matches: ["https://*.linkedin.com/*"]
@@ -16,7 +18,9 @@ export const getStyle = () => {
 const PlasmoOverlay = () => {
   return (
     <div className="z-50 flex fixed top-32 right-8">
-      <CountButton />
+      <AiMsgProvider>
+        <AiMsgReplier />
+      </AiMsgProvider>
     </div>
   )
 }
