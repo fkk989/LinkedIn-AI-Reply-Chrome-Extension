@@ -18,12 +18,12 @@ export const Prompt = () => {
   } = useAiMsgContext()
 
   return (
-    <div className="w-[700px]  flex flex-col gap-[20px] bg-[#F9FAFB] rounded-lg p-[20px]">
+    <div className="w-[700px]  flex flex-col items-center gap-[20px] bg-[#F9FAFB] rounded-lg p-[20px]">
       {/* text-container */}
       <div
         ref={textContainer}
         id="chatgpt-writer-ai-message-container"
-        className="w-[97%] max-h-[70vh] flex flex-col gap-[20px] overflow-scroll"></div>
+        className="w-[97%] max-h-[70vh] flex flex-col gap-[20px] overflow-scroll overflow-x-hidden overflow-y-hidden"></div>
 
       <div className="w-[97%] flex flex-col justify-between gap-[10px]">
         {/* input */}

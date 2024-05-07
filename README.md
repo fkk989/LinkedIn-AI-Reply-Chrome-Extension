@@ -1,35 +1,31 @@
-# ChatGPT Writer Take-Home Coding Assignment
 
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with command: `pnpm create plasmo --with-tailwindcss`.
+https://faisal-saai-furniture.s3.ap-south-1.amazonaws.com/Screen+Recording+2024-05-07+at+7.58.32%E2%80%AFPM.mkv
 
-## Getting Started
+## API Reference
 
-First, run the development server:
+#### Setup
 
-```bash
-pnpm dev
-# or
-npm run dev
+##### inastalling dependencies
+```
+npm install or pnpm i 
+```
+##### starting dev server
+```
+npm run dev or pnpm dev
 ```
 
-See how to load the extension: https://docs.plasmo.com/framework/workflows/dev#loading-the-extension
+- now go to chrome://extensions/
+- click on Load unpack at left corner then browser to the extensions directory navigate to build and sellect the chrome-mv3-dev 
 
-For further guidance, [visit our Documentation](https://docs.plasmo.com/).
-
-## Where to edit?
-
-- The main code is located in src/content.tsx. By default, when you run the extension, it displays a static count button on the LinkedIn website. You need to replace it with your own code.
-
-![count btn on linkedin](count_btn_on_linkedin.png)
-
-## Making production build
-
-Run the following:
-
-```bash
-pnpm build
-# or
-npm run build
+#### build
+```
+npm run build or pnpm build
 ```
 
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
+- now just navigate to extension driectory sellect chrome-mv3-prod  and drop the directory chrome://extensions/
+
+
+### good to go 
+
+
+
