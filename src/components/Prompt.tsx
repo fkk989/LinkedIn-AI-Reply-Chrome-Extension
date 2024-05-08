@@ -19,6 +19,7 @@ export const Prompt = () => {
 
   return (
     <div className="w-[700px]  flex flex-col items-center gap-[20px] bg-[#F9FAFB] rounded-lg p-[20px]">
+      {/* toast if input is empty  */}
       {/* text-container */}
       <div
         ref={textContainer}
@@ -43,6 +44,10 @@ export const Prompt = () => {
           {!regenerate ? (
             <div
               onClick={() => {
+                if (prompt.length === 0) {
+                  return alert("input cannot be empty")
+                }
+
                 handleGenerate({
                   prompt,
                   setPrompt,

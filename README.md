@@ -1,5 +1,5 @@
 
-https://faisal-saai-furniture.s3.ap-south-1.amazonaws.com/Screen+Recording+2024-05-07+at+7.58.32%E2%80%AFPM.mkv
+https://github.com/fkk989/LinkedIn-AI-Reply-Chrome-Extension/assets/114843472/21c70874-b83e-41c8-a89e-5aa2bcc17add
 
 ## API Reference
 

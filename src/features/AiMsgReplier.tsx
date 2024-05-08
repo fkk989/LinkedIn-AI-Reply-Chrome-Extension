@@ -1,9 +1,8 @@
-import { useCallback, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
 import { Modal, Prompt } from "~components"
 import { useAiMsgContext } from "~context"
-import { useMutationObserver } from "~hooks"
-import { insertBtnIntoInput } from "~lib/helpers"
+import { useInsertBtnToInput, useMutationObserver } from "~hooks"
 
 export const AiMsgReplier = () => {
   const { openModal, setOpenModal, closeModal, handleOpenModal } =
@@ -22,12 +21,16 @@ export const AiMsgReplier = () => {
     }
   }
 
+  // since
   // callback for mutation observer
   function mutationCallback(entries: MutationRecord[]) {
     const getInputElement = document.querySelector(
       ".msg-form__contenteditable"
     ) as HTMLInputElement
-    insertBtnIntoInput({ handleOpenModal, inputElement: getInputElement })
+    useInsertBtnToInput({
+      inputElement: getInputElement,
+      handleOpenModal
+    })
   }
   useMutationObserver({
     ref: mutationObserverRef,

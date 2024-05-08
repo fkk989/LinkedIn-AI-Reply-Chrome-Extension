@@ -1,6 +1,5 @@
 import cssText from "data-text:~style.css"
 import type { PlasmoCSConfig } from "plasmo"
-import { createPortal } from "react-dom"
 
 import { AiMsgProvider } from "~context"
 import { AiMsgReplier } from "~features/AiMsgReplier"

@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 
+// Mutation ovserver to look changes in the ref element
 interface MutationObserverProp {
   ref?: HTMLElement
   callback: MutationCallback

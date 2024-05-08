@@ -1,3 +1,4 @@
+// ui was not changing when the react state changes so I have to do it this way
 export const insertText = ({
   text,
   type,
